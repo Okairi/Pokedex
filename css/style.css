@@ -40,8 +40,11 @@ body {
 
 .principal__title-pokemon {
     display: flex;
+    align-items: center;
     background-color: white;
     border-radius: 0.5rem;
+    padding: 0.5rem 1.9rem;
+
 
 }
 
@@ -50,12 +53,15 @@ body {
     font-weight: bold;
     text-align: center;
     margin: 0;
-    padding: 0.5rem;
 
 
 }
 
-
+.principal__pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .principal__pokemon img:nth-child(2) {
     width: 10rem;
@@ -65,7 +71,7 @@ body {
 
 .principal__logo {
     width: 2rem;
-    height: 2.5rem;
+    height: 1.9rem;
 
 
 }
@@ -74,15 +80,17 @@ body {
     background-color: white;
     border-radius: 2rem;
     width: 17rem;
-    height: 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1;
     padding: 0.5rem;
-    /*  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
- */
     margin-bottom: 1rem;
+    line-height: 0.5rem;
+    color: gray;
+}
+
+.principal__info-pokemon div {
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer {
@@ -109,21 +117,29 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 
-
 }
 
+.footer__others div {
+    background-color: rgb(223, 169, 70);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
 
 .footer__others img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     filter: brightness(0);
-    cursor: pointer;
-    transition: all 0.5s;
+
+
 
 }
 
-.footer__others img:hover {
+.footer__others div:hover {
     transform: scale(1.1);
+    background-color: rgb(161, 134, 83);
+
 
 }
