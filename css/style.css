@@ -37,21 +37,36 @@ body {
 
 }
 
+
+.principal__title-pokemon {
+    display: flex;
+    background-color: white;
+    border-radius: 0.5rem;
+
+}
+
 .principal h2 {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     margin: 0;
-    background-color: white;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+
 
 }
 
-.principal__pokemon img {
 
+
+.principal__pokemon img:nth-child(2) {
     width: 10rem;
     filter: brightness(0);
+
+}
+
+.principal__logo {
+    width: 2rem;
+    height: 2.5rem;
+
 
 }
 
@@ -79,6 +94,7 @@ body {
     padding: 1rem;
     border-radius: 2rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 
 
 }
@@ -93,6 +109,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 
+
 }
 
 
@@ -101,9 +118,12 @@ body {
     height: 5rem;
     border-radius: 50%;
     filter: brightness(0);
-    display: grid;
+    cursor: pointer;
+    transition: all 0.5s;
 
+}
 
-
+.footer__others img:hover {
+    transform: scale(1.1);
 
 }
