@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+.cabezera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.cabezera__contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    gap: 0.3rem;
+    padding: 0.5rem 0;
+
+}
+
+.cabezera__logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 169, 70);
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.principal h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.principal__pokemon img {
+
+    width: 10rem;
+    filter: brightness(0);
+
+}
+
+.principal__info-pokemon {
+    background-color: white;
+    border-radius: 2rem;
+    width: 17rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    /*  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+ */
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+
+
+}
+
+.footer h2 {
+    font-weight: 600;
+    color: rgb(223, 169, 70);
+}
+
+.footer__others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+}
+
+
+.footer__others img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    filter: brightness(0);
+    display: grid;
+
+
+
+
+}
