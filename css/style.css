@@ -64,16 +64,16 @@ body {
 }
 
 .principal__pokemon img:nth-child(2) {
-    width: 10rem;
+    width: 14rem;
     filter: brightness(0);
+    transition: filter 0.5s;
+    margin-bottom: -2rem;
 
 }
 
 .principal__logo {
     width: 2rem;
     height: 1.9rem;
-
-
 }
 
 .principal__info-pokemon {
@@ -103,8 +103,6 @@ body {
     border-radius: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-
-
 }
 
 .footer h2 {
@@ -116,7 +114,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-
 }
 
 .footer__others div {
@@ -133,13 +130,21 @@ body {
     border-radius: 50%;
     filter: brightness(0);
 
-
-
 }
 
 .footer__others div:hover {
     transform: scale(1.1);
     background-color: rgb(161, 134, 83);
 
+}
 
+
+@media (min-width: 320px) {
+
+    .cabezera {
+        justify-content: start;
+
+        /* espaciado a la izquierda */
+
+    }
 }
