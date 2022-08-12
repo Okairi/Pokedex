@@ -98,6 +98,13 @@ body {
 
 }
 
+.principal__info-pokemon div p {
+    font-size: 1.4rem;
+
+
+
+}
+
 .principal__info-pokemon div {
     display: flex;
     justify-content: space-around;
@@ -163,7 +170,7 @@ body {
 
 @media (min-width:701px) {
     body {
-        background-color: rgb(236, 172, 134);
+        background-color: rgb(218, 167, 136);
     }
 
     .container {
@@ -176,6 +183,7 @@ body {
     .cabezera {
         justify-content: start;
         /* espaciado a la izquierda */
+        border-radius: 0.5rem 0.5rem 0 0;
     }
 
     .principal {
@@ -191,6 +199,7 @@ body {
     .footer {
         flex-direction: row;
         justify-content: space-around;
+        border-radius: 0 0 0.5rem 0.5rem;
     }
 
     .footer__others {
