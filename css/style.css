@@ -3,19 +3,13 @@ body {
     padding: 0
 }
 
-.container {
-    width: 90%;
-    margin: 1rem auto;
-
-}
-
 .cabezera {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: red;
-    border-radius: 10px 10px 0 0;
-    border: 2px solid #ccc;
+
+
 }
 
 .cabezera__contenido {
@@ -101,6 +95,7 @@ body {
     margin-bottom: 1rem;
     line-height: 0.5rem;
     color: gray;
+
 }
 
 .principal__info-pokemon div {
@@ -117,8 +112,7 @@ body {
     padding: 1rem;
     border-radius: 2rem;
     margin-bottom: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 0 0 10px 10px;
+
 }
 
 .footer h2 {
@@ -163,17 +157,20 @@ body {
     .principal__info-pokemon {
         width: 98%;
     }
+
+
 }
 
-/* 578 */
-@media (min-width: 934px) {
-
+@media (min-width:701px) {
     body {
-        margin: 0 auto;
+        background-color: rgb(236, 172, 134);
     }
 
     .container {
-        max-width: 70%;
+        width: 90%;
+        max-width: 70rem;
+        margin: 1rem auto;
+
     }
 
     .cabezera {
@@ -187,28 +184,8 @@ body {
         align-items: baseline;
     }
 
-    .principal__pokemon {
-        height: 200px;
-        justify-content: space-around;
-    }
-
     .principal__title-pokemon {
         margin-bottom: 3.5rem;
-    }
-
-    .principal__info-pokemon {
-
-        width: 27%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        line-height: 0rem;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .principal__info-pokemon div {
-
-        flex-direction: column;
     }
 
     .footer {
@@ -220,6 +197,22 @@ body {
         grid-template-columns: repeat(4, 1fr);
 
     }
-}
 
-/* 1192 */
+    .principal__pokemon {
+        height: 200px;
+        justify-content: space-around;
+    }
+
+    .principal__info-pokemon {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 1rem;
+        text-align: center;
+    }
+
+    .principal__info-pokemon div {
+
+        flex-direction: column;
+    }
+
+}
