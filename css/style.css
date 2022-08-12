@@ -5,7 +5,6 @@ body {
 
 .container {
     width: 90%;
-
     margin: 1rem auto;
 
 }
@@ -35,6 +34,8 @@ body {
     height: 2rem;
     border-radius: 50%;
     margin-left: 1rem;
+    background-color: white;
+    cursor: pointer;
 }
 
 .principal {
@@ -78,6 +79,7 @@ body {
     width: 12rem;
     /*   filter: brightness(0); */
     transition: filter 0.5s;
+    margin-top: 1rem;
     margin-bottom: -1rem;
     z-index: 1;
 
@@ -196,7 +198,7 @@ body {
 
     .principal__info-pokemon {
 
-        width: 40%;
+        width: 27%;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         line-height: 0rem;
