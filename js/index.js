@@ -50,4 +50,20 @@ const load = window.addEventListener("load", function () {
   );
 
   //Pokemons random footer ================================================================>
+  const getPokemonsRandom = async () => {
+    const response = await fetch(
+      `https://pokeapi.co/api/v2/pokemon/${ramdonId}`,
+      options
+    );
+    const data = await response.json();
+    return data;
+  };
+
+  getPokemonsRandom().then((data) => {
+    pokemonRandom1.innerHTML = data.name;
+    pokemonRandom2.innerHTML = data.name;
+    pokemonRandom3.innerHTML = data.name;
+    pokemonRandom4.innerHTML = data.name;
+    console.log("random footer ", data);
+  });
 });
