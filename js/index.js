@@ -43,7 +43,9 @@ const load = window.addEventListener("load", function () {
       heightPokemon.innerHTML = height / 10 + "m";
       idPokemon.innerHTML = id;
       weightPokemon.innerHTML = weight / 10 + " kg";
+      typePokemon.style.textTransform = "uppercase";
       typePokemon.innerHTML = types[0].type.name;
+      habilityPokemon.style.textTransform = "uppercase";
       habilityPokemon.innerHTML = abilities[0].ability.name;
       levelPokemon.innerHTML = base_experience;
     }
