@@ -72,10 +72,10 @@ body {
 }
 
 .principal__pokemon img:nth-child(2) {
-    width: 14rem;
+    width: 12rem;
     filter: brightness(0);
     transition: filter 0.5s;
-    margin-bottom: -2rem;
+    margin-bottom: -1rem;
 
 }
 
