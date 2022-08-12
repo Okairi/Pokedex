@@ -5,7 +5,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 70%;
+
     margin: 1rem auto;
 
 }
@@ -76,6 +76,7 @@ body {
     /*   filter: brightness(0); */
     transition: filter 0.5s;
     margin-bottom: -1rem;
+    z-index: 1;
 
 }
 
@@ -86,7 +87,7 @@ body {
 
 .principal__info-pokemon {
     background-color: white;
-    border-radius: 2rem;
+    border-radius: 0.80rem;
     width: 80%;
     max-width: 20rem;
     display: grid;
@@ -110,7 +111,6 @@ body {
     justify-content: center;
     padding: 1rem;
     border-radius: 2rem;
-
     margin-bottom: 1rem;
     border: 2px solid #ccc;
     border-radius: 0 0 10px 10px;
@@ -124,7 +124,7 @@ body {
 .footer__others {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .footer__others div {
@@ -136,8 +136,8 @@ body {
 }
 
 .footer__others img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     /*     filter: brightness(0); */
 
@@ -150,13 +150,25 @@ body {
 }
 
 
+@media (max-width: 320px) {
+    .principal__pokemon img:nth-child(2) {
+        width: 10rem;
+    }
 
+    .principal__info-pokemon {
+        width: 98%;
+    }
+}
 
 /* 578 */
 @media (min-width: 934px) {
 
     body {
         margin: 0 auto;
+    }
+
+    .container {
+        max-width: 70%;
     }
 
     .cabezera {
